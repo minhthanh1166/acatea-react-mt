@@ -1,0 +1,78 @@
+.navbar-header {
+    width: 100%;
+    height: 96px;
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+    transition: height 0.3s ease-in-out;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 96px;
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-height: 100%;
+    vertical-align: middle;
+  }
+  
+  .navbar-nav-custom {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-item-custom {
+    position: relative;
+    margin: 0 10px;
+  }
+  
+  .nav-link-custom {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+  }
+  
+  .nav-link-custom::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #056601;
+    transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  
+  .nav-link-custom:hover::after {
+    width: 75%;
+    transform: scaleX(1);
+  }
+  
+  .navbar-header.scrolled {
+    height: 60px; /* Chiều cao navbar khi cuộn */
+
+  }
+  
+  .navbar-header.scrolled .navbar-container {
+    line-height: 60px; /* Dòng này để căn giữa chữ trong navbar */
+  }
+  
+  .navbar-header.scrolled .logo img {
+    max-height: 40px; /* Kích thước hình ảnh khi navbar được cuộn */
+    margin-bottom: 15px;
+  }
+  
