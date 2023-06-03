@@ -3,8 +3,9 @@
     height: 96px;
     position: fixed;
     z-index: 1000;
+    top: 0;
     background-color: white;
-    transition: height 0.3s ease-in-out;
+    transition: height 0.7s ease-in-out;
   }
   
   .navbar-container {
@@ -40,7 +41,7 @@
     text-decoration: none;
     font-size: 1.3em;
     color: black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "SVN-Athena_0";
     position: relative;
   }
   
