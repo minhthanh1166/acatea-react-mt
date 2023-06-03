@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from './img/acatea-green.svg';
+import logoo from '../acatea-green.svg';
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
@@ -34,7 +34,7 @@ export default function Navbar() {
       <nav className={`navbar-header ${isScrolled ? 'scrolled' : ''}`}>
         <div className="navbar-container">
           <div className="logo">
-            <img src={logo} alt="logo" style={{ width: '15rem' }} />
+            <img src={logoo} alt="logo" style={{ width: '15rem' }} />
           </div>
           <div className="navbar-content">
             <ul className="navbar-nav-custom">
