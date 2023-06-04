@@ -6,6 +6,7 @@ import WOW from 'wowjs';
 import 'animate.css/animate.css';
 import 'wowjs/css/libs/animate.css';
 import { useEffect } from 'react';
+import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<TrangChu />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
