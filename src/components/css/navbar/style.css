@@ -5,7 +5,7 @@
     z-index: 1000;
     top: 0;
     background-color: white;
-    transition: height 0.7s ease-in-out;
+    transition: height 0.3s ease-in-out;
   }
   
   .navbar-container {
@@ -43,6 +43,7 @@
     color: black;
     font-family: "SVN-Athena_0";
     position: relative;
+    text-transform: uppercase;
   }
   
   .nav-link-custom::after {

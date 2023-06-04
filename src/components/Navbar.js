@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logoo from '../acatea-green.svg';
 import { Link } from 'react-router-dom';
+import "./css/navbar/style.css"
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
